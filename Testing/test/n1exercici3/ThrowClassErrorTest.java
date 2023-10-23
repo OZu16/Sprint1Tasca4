@@ -6,13 +6,13 @@ import org.junit.jupiter.api.Test;
 
 class ThrowClassErrorTest {
 
-	ThrowErrorClass a = new ThrowErrorClass();
+	ThrowErrorClass error = new ThrowErrorClass();
 	
 	@Test
 	void test() {
 		
-		assertThrows(ArrayIndexOutOfBoundsException.class, () -> a.throwError());
-		
+		assertThrows(ArrayIndexOutOfBoundsException.class, () -> error.throwError());
+	
 	}
 
 }
